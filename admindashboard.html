@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Admin Panel</title>
+
+<link rel="stylesheet" type="text/css" href="css/myStyle2.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="fixed-header">
+                    
+                    
+    <div class="container-header">
+        <nav>
+            <a href="index.html">Home</a>
+
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
+            
+            <a type='click' id='logoutb'>LogOut</a>
+
+        </nav>
+    </div>
+</div>
+
+
+
+<body>
+    <div id="page-content-wrapper">
+        <div class="cl">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">userid</th>
+                        <th scope="col">firstname</th>
+                        <th scope="col">lastname</th>
+                        <th scope="col">phone</th>
+                        <th scope="col">address</th>
+                        <th scope="col">gender</th>
+                        <th scope="col">field</th>
+                        <th scope="col">date_of_birth</th>
+                        <th scope="col">Del</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyone">
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <body class="full">
+        <div class="container">
+            <div>
+                <text type="event_form">Add Events</text>
+            </div><br>
+            <label name="label">Event Name:</label>
+            <div>
+                <input id="eventname" placeholder="Add Event" class="input">
+            </div>
+            <label name="label">Event Address:</label>
+            <div>
+                <input id="eventaddress" placeholder="Add Address" class="input"><br />
+            </div>
+            <label name="label">Event Start Time:</label>
+            <div>
+                <input type="time" id="eventstarttime" class="input"><br />
+            </div>
+            <label name="label">Event End Time:</label>
+            <div>
+                <input type="time" id="eventendtime" class="input"><br />
+            </div>
+            <label name="label">Event Date:</label>
+            <div>
+                <input type="date" id="eventdate" placeholder="Add Address" class="input"><br />
+            </div>
+            <div>
+                <button type="events" id="event">Add</button>
+            </div>
+        </div>
+    </body>
+    <div>
+        <button type='loadev' id='loadev'>View Events</button>
+    </div>
+</body>  
+<div class="fixed-footer">
+    <div class="container-header">Copyright &copy; 2020 Event Manager-Bishesh Man Singh</div>        
+</div>
+<script src="js/user.js"></script>
+<script src="js/addevent.js"></script>
+</html>
+<script>
+$(document).ready(function () {
+        $("#loadev").click(function () {
+            window.location.href='viewevents.html'
+        });
+    });
+</script>

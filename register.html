@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/myStyle2.css" />
+
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <div class="fixed-header">
+                    
+                    
+        <div class="container-header">
+            <nav>
+                <label type='welcome'> Welcome:</label>
+         
+
+                <input type='txt' id='fname' disabled>
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+                <a href="login.html">Login</a></li>
+
+            </nav>
+        </div>
+    </div>
+
+    <body class="full">
+        <div class="container">
+            <div>
+                <text type="register_form">REGISTER FORM</text>
+            </div><br>
+            <label name="label">First Name:</label>
+            <div>
+                <input type="text" id="firstname" placeholder="Enter Firstname" name="firstname" required>
+            </div><br>
+            <label name="label">Last Name:</label>
+            <div>
+                <input type="text" id="lastname" placeholder="Enter Lastname" name="lastname" required>
+            </div><br>
+            <label name="label"> E-mail:</label>
+            <div>
+                <input type="text" id="email" placeholder="Enter email" name="email" required>
+            </div><br>
+            <label name="label"> Address:</label>
+            <div>
+                <input type="text" id="address" placeholder="Enter address" name="address" required>
+            </div><br>
+            <label name="label"> Phone:</label>
+            <div>
+                <input type="number" id="phone" placeholder="Enter Phone Number" name="phone" required>
+            </div><br>
+            <label name="label">Password:</label>
+            <div>
+                <input type="password" id="password" placeholder="Enter password" name="password" required>
+            </div><br>
+            <label name="label">Re-Password:</label>
+            <div>
+                <input type="password" id="repassword" placeholder="Re-Enter password " name="repassword" required>
+            </div><br>
+            <label name="label">Gender:</label>
+            <div>
+                <select type="select" id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div><br>
+            <label name="label">Related Event:</label>
+            <div>
+                <select type="select" id="field" name="field" required>
+                    <option value="IT">IT</option>
+                    <option value="Social">Social</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Banking">Banking</option>
+                    <option value="Education">Education</option>
+                   
+                </select>
+            </div><br>
+            <label name="label">Date Of Birth:</label>
+            <div>
+                <input type="date" id="date_of_birth" name="date_of_birth" required>
+            </div><br>
+            <div>
+                <button type="register" id="button">Register</button>
+            </div>
+        </div>
+        </div>
+    </body>
+    <div class="fixed-footer">
+        <div class="container-header">Copyright &copy; 2020 Event Manager-Bishesh Man Singh</div>        
+    </div>
+</body>
+<script src="js/register.js"></script>
+</html>

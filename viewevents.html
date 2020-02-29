@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/myStyle2.css" />
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+
+
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <div class="fixed-header">
+                    
+                    
+        <div class="container-header">
+            <nav>
+               
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+                <a href="admindashboard.html">Home</a>
+                <a type='click' id='logoutbtn'>LogOut</a></li>
+            </nav>
+        </div>
+    </div>
+   
+</body>
+
+<body>
+    <div id="page-content-wrapper">
+        <div class="cl">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">eventid</th>
+                        <th scope="col">eventname</th>
+                        <th scope="col">eventaddrress</th>
+                        <th scope="col">eventstarttime</th>
+                        <th scope="col">eventendtime</th>
+                        <th scope="col">event date</th>
+                        <th scope="col">Del</th>
+                        <th scope="col">Update</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodytwo">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+
+<div class="fixed-footer">
+    <div class="container-header">Copyright &copy; 2020 Event Manager-Bishesh Man Singh</div>        
+</div>
+<script src="js/event.js"></script>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $("#logoutbtn").click(function () {
+            localStorage.removeItem('Token');
+            localStorage.removeItem('eventid');
+            localStorage.removeItem('userid');
+            window.location.href='login.html'
+        });
+    });
+</script>

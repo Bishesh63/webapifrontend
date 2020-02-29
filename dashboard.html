@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/myStyle2.css" />
+
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="fixed-header">
+                    
+                    
+        <div class="container-header">
+            <nav>
+                <label type='welcome'> Welcome:</label>
+         
+
+                <input type='txt' id='fname' disabled>
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+                <a type='click' id='logoutbtn3'>LogOut</a>
+            </nav>
+        </div>
+    </div>
+    <!--<header>
+
+        <body>
+            <div class="wrapper">
+                <a href="index.html">
+                    <img src="img/Logo.jpeg" alt="">
+                </a>
+            </div>
+            <label type='welcome'> Welcome:</label>
+                    <input type='txt' id='fname' disabled>
+                    <a type='click' id='logoutbtn3'>LogOut</a>
+
+         </body>      
+    </header>-->
+
+</body>
+
+<div class="container-body">
+<body class="full">
+    <div class="container">
+        <div>
+            <text type="update_form">Profile</text>
+        </div><br>
+        </label><label id="userid" hidden></label><br>
+        <label name="label">First Name:</label>
+        <div>
+            <input type="text" id="firstname" placeholder="Enter Firstname" name="firstname" disabled>
+        </div><br>
+        <label name="label">Last Name:</label>
+        <div>
+            <input type="text" id="lastname" placeholder="Enter Lastname" name="lastname" disabled>
+        </div><br>
+        <label name="label"> E-mail:</label>
+        <div>
+            <input type="text" id="email" placeholder="Enter email" name="email" disabled>
+        </div><br>
+        <label name="label"> Address:</label>
+        <div>
+            <input type="text" id="address" placeholder="Enter address" name="address" disabled>
+        </div><br>
+        <label name="label"> Phone:</label>
+        <div>
+            <input type="number" id="phone" placeholder="Enter Phone Number" name="phone" disabled>
+        </div><br>
+        <label name="label">Gender:</label>
+        <div>
+            <select type="select" id="gender" name="gender" disabled>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+        </div><br>
+        <label name="label">Blood Group:</label>
+        <div>
+            <select type="select" id="field" name="field" disabled>
+                <option value="IT">IT</option>
+                <option value="Social">Social</option>
+                <option value="Medical">Medical</option>
+                <option value="Banking">Banking</option>
+                <option value="Education">Education</option>
+               
+            </select>
+        </div><br>
+        <label name="label">Date Of Birth:</label>
+        <div>
+            <input type="date" id="date_of_birth" name="date_of_birth" disabled>
+        </div><br>
+    </div>
+</body>
+</div>
+<div class="container-body">
+
+
+<body>
+    <div><br>
+        <a href="updateuser.html" id="clickupt">Click here to update your profile</a>
+    </div>
+</body>
+</body>
+<br>
+<br>
+<div id=name>
+    Events:
+</div>
+
+<body>
+    <div id="page-content-wrapper">
+        <div class="cl">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">eventid</th>
+                        <th scope="col">eventname</th>
+                        <th scope="col">eventaddrress</th>
+                        <th scope="col">eventstarttime</th>
+                        <th scope="col">eventendtime</th>
+                        <th scope="col">event date</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodytwo">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</div>
+<!--<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>Get Blood<span></span></h3>
+        <p class="footer-links">
+        </p>
+
+        <p class="footer-company-name">Blood bank &copy; 2020</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>10 Mahakabi Street</span> Kathmandu, Nepal</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+9779845759780</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#">support@bloodbank.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Blood searching service
+    </div>
+</footer>-->
+<div class="fixed-footer">
+    <div class="container-header">Copyright &copy; 2020 Event Manager-Bishesh Man Singh</div>        
+</div>
+<script src="js/fetchevent.js"></script>
+<script src="js/profile.js"></script>
+
+</html>

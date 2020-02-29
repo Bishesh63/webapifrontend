@@ -1,0 +1,182 @@
+.container {
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+    width: 450px;
+    margin: 10% 30%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #333;
+}
+#button{
+    color: white;
+    background-color:darkblue;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+#button2{
+    color: white;
+    background-color:darkblue;
+    padding: 10px 10px;
+    border: none;
+    margin-left: 45%;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+select[type=select]{
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 0 22px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+#loadev{
+    color: white;
+    background-color:darkblue;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+#back{
+    color: white;
+    background-color:darkblue;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10%;
+}
+#uptbutton{
+    color: white;
+    background-color:darkblue;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+#clickupt{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+
+    margin-left: 40%;
+}
+#clickupt:hover{
+    color: blue;
+}
+
+#event{
+    color: white;
+    background-color:darkblue;
+    padding: 14px 0px;
+    margin: 8px 25% ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+  }
+  label[name=label]{
+    width: 100%;
+    margin: 0px 30px 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #ffffff
+  }
+
+text{
+    margin-left: 30%;
+    font-size: 40px;
+    color: white;
+  }
+  input{
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 0 22px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+
+    input[type='txt']{
+        width: 20%;
+        margin-right: 10px;
+        margin-left: 10px;
+        box-sizing: unset;
+        color:  #333;
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 0px;
+        }
+        label[type='welcome']{
+            width: 20%;
+            margin-left: 10px;
+            margin-right: 10px;
+            border: 0px solid #cf0e0e;
+            color: #ffffff;
+            margin-top: 10px;
+            font-size: 20px;
+            }
+
+#event:hover {
+    opacity: 0.6;
+    background-color: blue;
+}
+
+#button:hover {
+    opacity: 0.6;
+    background-color: green;
+}
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5%;
+}
+#table td, #table th {
+    border: 2px solid rgb(226, 190, 190);
+    padding: 8px;
+}
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+}
+a[type='ev']{
+    margin-left: 20%;
+    border: blue;
+    width: 20%;
+    font-size: 30px;
+    color: black;
+}
+
+#logoutbtn3{
+    width: 20%;
+    font-size: 16px;
+    color: white;
+
+    cursor: pointer;
+}
+a:hover{
+    opacity: 1.0;
+    color: rgb(208, 255, 0);
+}
+#name{
+    font-size: 40px;
+    width: 20%;
+    margin: 0px 45% 0px;
+    display: inline-block;
+    box-sizing: border-box;
+}

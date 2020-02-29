@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/myStyle2.css" />
+
+
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+
+    <div class="fixed-header">
+                    
+                    
+        <div class="container-header">
+            <nav>
+                <a href="index.html">Home</a>
+
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+                <a href="adminlogin.html">Login</a>
+
+            </nav>
+        </div>
+    </div>
+
+   
+
+    <body class="full">
+        <div class="container">
+            <div>
+                <text type="login_form">LOGIN FORM</text>
+            </div>
+            <br>
+            <label name="label"> Phone:</label>
+            <div>
+                <input type="number" id="username" placeholder="Enter Phone Number" name="username" required>
+            </div><br>
+            <label name="label"> Password:</label>
+            <div>
+                <input type="password" id="password" placeholder="Enter Password" name="password" required>
+            </div><br>
+            <div>
+                <button type="adminlogin" id="button">Login</button>
+            </div><br>
+            <div>
+                <text type="text" id=text>Not Admin?</text>
+                <a href="login.html" type="click">Click here</a>
+            </div>
+        </div>
+        <div class="fixed-footer">
+            <div class="container-header">Copyright &copy; 2020 Event Manager-Bishesh Man Singh</div>        
+        </div>
+    </body>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#button").click(function () {
+            const phone = $('#username').val();
+            const password = $('#password').val();
+            console.log(phone)
+            console.log(password)
+
+            if (username == "" || password == "") {
+                alert("All fields are Required !")
+
+            } else {
+                let url = 'http://localhost:3000/api/v1/authadmin';
+                let data = { phone: phone, password: password };
+                fetch(url, {
+                    method: 'post',
+                    headers: {
+                        "Content-type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                })
+                    .then(response => response.json())
+                    .then(function (data) {
+                        if (data.status == "true") {
+                            localStorage.setItem('Token', data.accessToken)
+                            alert("Successfull")
+                            window.location.href = "admindashboard.html"
+                        } else {
+                            alert("Incorrect credentials supplied !!")
+                        }
+                        console.log('Request succeeded with JSON response', data);
+                    })
+                    .catch(function (error) {
+                        console.log('Request failed', error);
+                    });
+            }
+        });
+    });
+
+</script>
+</html>
